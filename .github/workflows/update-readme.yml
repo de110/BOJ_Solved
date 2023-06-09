@@ -10,9 +10,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      actions: write
+    permissions: write-all
     steps:
       - uses: actions/labeler@v4
         with:
