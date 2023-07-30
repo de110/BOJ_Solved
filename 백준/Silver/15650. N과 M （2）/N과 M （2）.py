@@ -11,7 +11,7 @@ def dfs(start):
     for i in range(start,N+1):
         if i not in s:
             s.append(i)
-            dfs(i)
+            dfs(i+1)
             s.pop()
 
 dfs(1)
